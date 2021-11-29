@@ -1,4 +1,8 @@
 pipeline {
+    tools {
+        dockerTool 'Docker_Latest'
+        terraform 'terraform_latest'
+    }
     agent {
         docker {
             image 'node:6-alpine'
